@@ -89,9 +89,7 @@
     "wcag-contrast": "^3.0.0"
   },
   "resolutions": {
-    "@walletconnect/web3-provider": "1.1.1-alpha.0",
-    "**/@types/react": "18.2.21",
-    "**/@web3-react/types": "8.2.3"
+    "@walletconnect/web3-provider": "1.1.1-alpha.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -101,7 +99,7 @@
     "storybook": "start-storybook -p 6006",
     "test": "react-scripts test --env=jsdom",
     "lint": "yarn eslint --ignore-path .gitignore --cache --cache-location node_modules/.cache/eslint/ .",
-    "codegen:schema": "npx apollo client:download-schema --endpoint=https://api.thegraph.com/subgraphs/name/ianlapham/uniswap-v3-rinkeby",
+    "codegen:schema": "npx apollo client:download-schema --endpoint=https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v3",
     "codegen:generate": "apollo codegen:generate --localSchemaFile=schema.json --target=typescript --includes=src/**/*.ts --tagName=gql --addTypename --globalTypesFile=src/types/graphql-global-types.ts types",
     "deduplicate": "yarn-deduplicate --strategy=highest"
   },
@@ -150,5 +148,6 @@
     "ua-parser-js": "^1.0.36",
     "uifx": "^2.0.7",
     "yarn-deduplicate": "^6.0.2"
-  }
+  },
+  "packageManager": "yarn@4.3.0"
 }
