@@ -1,7 +1,7 @@
 {
   "name": "@uniswap/interface",
   "description": "Uniswap Interface",
-  "homepage": ".",
+  "homepage": "https://uniswap-v3-info.metacrypt.org/",
   "private": true,
   "devDependencies": {
     "@emotion/core": "^11.0.0",
